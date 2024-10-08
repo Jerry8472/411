@@ -6,7 +6,29 @@ from wildlife_tracker.migration_tracking.migration_path import MigrationPath
 
 class MigrationManager:
     def __init__(self) -> None:
-        self.migration: dict[int, Migration] = {}
+        migrations: dict[int, Migration] = {}
+        paths: dict[int, MigrationPath] = {}
+
+    def remove_migration_path(path_id: int) -> None:
+        pass
+
+    def get_migration_paths() -> list[MigrationPath]:
+        pass
+    def get_migration_path_by_id(path_id: int) -> MigrationPath:
+        pass
+
+    def get_migration_paths() -> list[MigrationPath]:
+        pass
+
+    def get_migration_paths_by_destination(destination: Habitat) -> list[MigrationPath]:
+        pass
+
+    def get_migration_paths_by_species(species: str) -> list[MigrationPath]:
+        pass
+
+    def get_migration_paths_by_start_location(start_location: Habitat) -> list[MigrationPath]:
+        pass
+
     def cancel_migration(migration_id: int) -> None:
         pass
 
